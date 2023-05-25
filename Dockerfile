@@ -1,4 +1,4 @@
-FROM python:3.6-slim
+FROM python:3.12.0b1-slim
 WORKDIR /root
 COPY yat-master/pkg yat
 RUN cd yat && chmod +x install && ./install -F
